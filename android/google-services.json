@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "534424828445",
+    "firebase_url": "https://sbuywallet-ce2e7.firebaseio.com",
+    "project_id": "sbuywallet-ce2e7",
+    "storage_bucket": "sbuywallet-ce2e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534424828445:android:c0bd29d5531229eb",
+        "android_client_info": {
+          "package_name": "com.ioteh.sbuywallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534424828445-viof0fuu8q1cuhp54bboee34ao28c4lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHjA_PMSLMJ3Kb8x7KtaLj5gJx8M8VanY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
