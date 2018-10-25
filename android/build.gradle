@@ -19,7 +19,7 @@ buildscript {
 allprojects {
     repositories {
 				// Add jitpack repository (added by react-native-spinkit)
-        maven { url "https://jitpack.io" }
+				maven { url "https://jitpack.io" }
         mavenLocal()
         jcenter()
         maven {
@@ -32,7 +32,16 @@ allprojects {
         }
     }
 }
-
+subprojects {
+    afterEvaluate {project ->
+        if (project.hasProperty("android")) {
+            android {
+                compileSdkVersion 27
+                buildToolsVersion "27.0.2"
+            }
+        }
+    }
+}
 ext {
     buildToolsVersion = "26.0.3"
     minSdkVersion = 16

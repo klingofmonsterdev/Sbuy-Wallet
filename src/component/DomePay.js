@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Dimensions, ScrollView, Image, TouchableOpacity } from 'react-native';
-import { Container, Icon, Button, Input, Item } from 'native-base';
-import Spinners from 'react-native-spinkit';
+import { Container, Icon, Button, Input, Item, Spinner } from 'native-base';
+// import Spinners from 'react-native-spinkit';
 import axios from 'axios';
 
 import PopupDialog, { SlideAnimation } from 'react-native-popup-dialog';
@@ -252,12 +252,13 @@ export default class DomePay extends Component {
             case "LOADING":
                 return (
                     <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: "10%" }}>
-                        <Spinners
+                        {/* <Spinners
                             isVisible={true}
                             color="rgba(69, 210, 92,0.31)"
                             size={150}
                             type="FadingCircleAlt"
-                        />
+                        /> */}
+                        <Spinner color={"rgba(69, 210, 92,0.31)"} size="large"/>
                         <Text style={{
                             fontSize: RF(4),
                             color: "#777777",
