@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Dimensions, ScrollView, Image, AsyncStorage } from 'react-native';
 import { Item, Input, Icon, Button, Spinner } from 'native-base';
-import axios from 'axios';
 
 import LinearGradient from 'react-native-linear-gradient';
 import PopupDialog from "react-native-popup-dialog";
@@ -32,7 +31,7 @@ export default class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            username: "kling1@gmail.com",
+            username: "sbuyadmin@gmail.com",
             password: "123456",
 
             showPass: false,
@@ -56,14 +55,6 @@ export default class Login extends Component {
 
     async componentDidMount() {
         await this.dialogLoading.show();
-
-        // AsyncStorage.removeItem('user', () => {
-        //     console.log('Logout Success')
-        // })
-
-        // AsyncStorage.removeItem('passcode', () => {
-        //     console.log('Logout Success')
-        // })
 
         await AsyncStorage.getItem('user')
             .then((res) => {
